@@ -1,0 +1,81 @@
+.login-container
+{
+    font-family: "Comic Sans MS", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-container h3
+{
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.login-form
+{
+    display: flex;
+    gap: 10px;
+}
+
+.login-form input
+{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.2s ease;
+}
+
+.login-form input:focus
+{
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.login-form button
+{
+    padding: 10px 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+
+.login-form button:hover
+{
+    background: #3d7ac3;
+}
+
+.dropdown-wrapper
+{
+    margin-top: 8px;
+}
+
+hr
+{
+    border: none;
+    height: 1px;
+    background: #e2e2e2;
+    margin: 10px 0;
+}
+
+.selected-user
+{
+    text-align: center;
+    margin-top: 10px;
+    color: #434343;
+    font-size: 16px;
+}
