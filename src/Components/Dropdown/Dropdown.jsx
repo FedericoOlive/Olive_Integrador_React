@@ -26,10 +26,7 @@ export default function Dropdown({label = "Seleccionar", options = [], onSelect}
         setSelected(option);
         setOpen(false);
         if (onSelect != null)
-        {
-            console.log("Disparado onSelect", option);
             onSelect(option);
-        }
     };
     
     return (
@@ -52,7 +49,7 @@ export default function Dropdown({label = "Seleccionar", options = [], onSelect}
                             }`}
                             onClick = {() =>
                             {
-                                console.log("Dropdown Seleccionado ", opt)
+                                //console.log("Dropdown Seleccionado ", opt)
                                 handleSelect(opt)
                             }}
                         >
