@@ -1,9 +1,9 @@
-import './App.css'
 import {Route, Routes} from "react-router-dom";
 import ChatScreen from "./Screens/ChatScreen/ChatScreen.jsx";
 import LoginScreen from "./Screens/LoginScreen/LoginScreen.jsx";
+import './App.css'
 
-function App()
+export default function App()
 {
     return (
         <div>
@@ -15,5 +15,3 @@ function App()
         </div>
     )
 }
-
-export default App
