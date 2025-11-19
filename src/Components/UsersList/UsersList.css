@@ -13,9 +13,28 @@ li
     background-color: #354759;
     cursor: pointer;
     transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 li:hover
 {
     background-color: #e2e8f0;
+}
+
+.user-avatar
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.userlist-item.selected
+{
+    background-color: #6c6b9f;
+    color: #323232;
+    font-weight: bold;
 }

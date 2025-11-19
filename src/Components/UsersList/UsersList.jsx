@@ -1,11 +1,12 @@
 ﻿import React from "react";
+import {GetAvatarUrl} from "../../Utils/Utils.js";
 import "./UsersList.css";
 
 export function UsersList({users = [], idFrom, idTo, onSelectUser})
 {
     const currentUser = users.find(user => user.id == idFrom);
     const otherUsers = users.filter(user => user.id != idFrom);
-
+    
     return (
         <div>
             <ul className = "userlist">
@@ -15,6 +16,11 @@ export function UsersList({users = [], idFrom, idTo, onSelectUser})
                             key = {currentUser.id}
                             className = "userlist-item selected"
                         >
+                            <img
+                                src = {GetAvatarUrl(currentUser.id)}
+                                alt = "avatar"
+                                className = "user-avatar"
+                            />
                             {currentUser.name}
                         </li>
                     )
@@ -29,6 +35,11 @@ export function UsersList({users = [], idFrom, idTo, onSelectUser})
                             className = {`userlist-item ${idTo == user.id ? "selected" : ""}`}
                             onClick = {() => onSelectUser(user.id)}
                         >
+                            <img
+                                src = {GetAvatarUrl(user.id)}
+                                alt = "avatar"
+                                className = "user-avatar"
+                            />
                             {user.name}
                         </li>
                     ))

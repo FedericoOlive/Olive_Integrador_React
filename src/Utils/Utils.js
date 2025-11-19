@@ -8,4 +8,6 @@
     });
 };
 
-export {formatTimestamp};
+const GetAvatarUrl = (id) => `https://randomuser.me/api/portraits/men/${id}.jpg`;
+
+export {formatTimestamp, GetAvatarUrl};
