@@ -88,8 +88,8 @@ export default function ChatScreen()
             <div className = "chat-container">
                 <header className = {`chat-header ${showUsers ? "visible" : "invisible"}`}>
                     <HeaderIds
-                        nameFrom = {name}
-                        nameTo = {name}
+                        nameFrom = {idFrom}
+                        nameTo = {idTo}
                         callbackUsersButton = {() => setShowUsers(!showUsers)}
                     />
                 </header>

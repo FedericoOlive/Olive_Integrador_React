@@ -5,7 +5,7 @@ export default function InputFieldHeaderIds({nameFrom, nameTo, callbackUsersButt
 {
     return (
         <div className = "chat-header-inputs">
-            {nameFrom}->{nameTo}
+            {nameFrom} to {nameTo}
 
             <button
                 className = "toggle-users-btn"
