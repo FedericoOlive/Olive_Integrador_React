@@ -7,7 +7,7 @@ A diferencia de una simple maqueta, esta aplicación implementa **mensajería en
 ## 🔗 Deploy
 Puedes ver el proyecto funcionando aquí:
 ```bash
-👉 https://olive-integrador-react-git-main-saurons-projects-b2c1ec82.vercel.app?_vercel_share=6B1iC4D0BK8FWn3dzsRvt3lX7fsay91K
+https://olive-integrador-react-git-main-saurons-projects-b2c1ec82.vercel.app?_vercel_share=6B1iC4D0BK8FWn3dzsRvt3lX7fsay91K
 ```
 
 ## 🚀 Funcionalidades
